@@ -1,13 +1,11 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import ProjectCard from './ProjectCards';
+import Particle from '../Particle';
+import webstyle from '../../Assets/Projects/webstyle.png';
+import comingsoontemplate from '../../Assets/Projects/comingsoontemplate.png';
+import vibeitwebsite from '../../Assets/Projects/vibeitwebsite.png';
+import emotionsense from '../../Assets/Projects/emotionsense.png';
 
 function Projects() {
   return (
@@ -17,55 +15,54 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: 'white' }}>
           Here are a few projects I've worked on recently.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={webstyle}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Website Color Extractor"
+              description="A Next.js tool that extracts all visible colors from any public website. Just enter a URL to instantly preview the site's color palette in RGB format, with an option to download the results as a JSON file for design or development use."
+              ghLink="https://github.com/fadingbeat/web-style-extractor"
+              demoLink="https://web-style-extractor.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={comingsoontemplate}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Coming Soon React Template"
+              description="A clean and responsive Coming Soon landing page built with Vite and React. Designed to showcase your brand while a full website is in progress, with modern layout and mobile-friendly design."
+              ghLink="https://github.com/fadingbeat/vibeit"
+              demoLink="https://vibeit.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={vibeitwebsite}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="vibeit.hr"
+              description="The official website of VibeIT, a web development company. Built from scratch using React and MUI, it features a clean design and is fully responsive. Deployed seamlessly on Vercel for fast global performance."
+              demoLink="https://www.vibeit.hr/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={emotionsense}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Emotion Analysis"
+              description="Built with Angular and integrated with an emotion analysis API and OpenAI, this tool processes user input to detect emotions. It visualizes results in a chart with color-coded dropdowns. Reporting features are in progress."
+              ghLink="https://github.com/fadingbeat/emotion-analysis"
+              demoLink="https://sense-sentiment.netlify.app/home"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -84,9 +81,9 @@ function Projects() {
               description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
               Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>

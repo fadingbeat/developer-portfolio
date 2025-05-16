@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import myImg from '../../Assets/avatar.svg';
+import Tilt from 'react-parallax-tilt';
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+} from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 function Home2() {
   return (
@@ -15,41 +15,44 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: '2.6em' }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
+              I'm a{' '}
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple">software engineer </b>
               </i>
+              with 6+ years of professional experience in developing, deploying,
+              and maintaining web applications.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              While my core strength lies in
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple"> frontend development</b>
               </i>
+              , I'm deeply involved in the full development lifecycle.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              My approach is{' '}
               <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
+                <b className="purple">systematic</b>
+              </i>{' '}
+              and{' '}
               <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="purple">problem-solving</b>
+              </i>{' '}
+              oriented. I focus on stability, security, and code quality, with a
+              strong emphasis on{' '}
+              <i>
+                <b className="purple">debugging</b>
+              </i>{' '}
+              and real-world usability &nbsp;
+              <br />
+              <br />
+              Over the years, I've worked on projects ranging from fake review
+              detection systems and internal business tools to custom websites
+              and web apps.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,7 +70,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/fadingbeat"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +80,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://x.com/Fadingbeat"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +90,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/nikolina-pozega/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +100,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/nina_codes/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
